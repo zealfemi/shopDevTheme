@@ -25,7 +25,9 @@
   <body>
     <div class="hero_area">
       <!-- header section strats -->
+
       {{ content_for_header }}
+      {{ section 'header' }}
       <!-- end header section -->
 
       {{ content_for_layout }}
@@ -729,7 +731,7 @@
     </section>
     <!-- end client section -->
     <!-- footer start -->
-
+    {{ section 'footer' }}
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- popper js -->
