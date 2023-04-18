@@ -1,7 +1,13 @@
 <header class="header_section">
   <div class="container">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
-      <a class="navbar-brand" href="index.html"><img width="250" src="images/logo.png" alt="#"></a>
+      {% if section.settings.logo != blank %}
+        <a class="navbar-brand" href="{{ section.settings.logo.url }}"
+          ><img width="250" src="{{ section.settings.logo | img_url: 'medium' }}" alt="#"
+        ></a>
+      {% else %}
+
+      {% endif %}
       <button
         class="navbar-toggler"
         type="button"
