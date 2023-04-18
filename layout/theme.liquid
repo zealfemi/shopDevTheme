@@ -13,13 +13,13 @@
     <link rel="shortcut icon" href="images/favicon.png" type="">
     <title>{{ shop.name }}</title>
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
     <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    {{ 'font-awesome.min.css' | asset_url | stylesheet_tag }}
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    {{ 'style.css' | asset_url | stylesheet_tag }}
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet">
+    {{ 'resposive' | asset_url | stylesheet_tag }}
   </head>
   <body>
     <div class="hero_area">
