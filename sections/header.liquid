@@ -2,11 +2,11 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       {% if section.settings.logo != blank %}
-        <a class="navbar-brand" href="{{ section.settings.logo.url }}"
+        <a class="navbar-brand" href="{{ shop.url }}"
           ><img width="250" src="{{ section.settings.logo | img_url: 'medium' }}" alt="#"
         ></a>
       {% else %}
-
+        <a class="navbar-brand" href="{{ shop.url }}">{{ shop.name }}</a>
       {% endif %}
       <button
         class="navbar-toggler"
