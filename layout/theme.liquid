@@ -733,12 +733,12 @@
     <!-- footer start -->
     {% section 'footer' %}
     <!-- jQery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    {{ 'jquery-3.4.1.min.js' | asset_url | script_tag }}
     <!-- popper js -->
-    <script src="js/popper.min.js"></script>
+    {{ 'popper.min.js' | asset_url | script_tag }}
     <!-- bootstrap js -->
-    <script src="js/bootstrap.js"></script>
+    {{ 'bootstrap.js' | asset_url | script_tag }}
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    {{ 'custom.js' | asset_url | script_tag }}
   </body>
 </html>
