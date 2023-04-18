@@ -20,14 +20,14 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     <!-- responsive style -->
     {{ 'resposive' | asset_url | stylesheet_tag }}
+
+    {{ content_for_header }}
   </head>
 
   <body>
     <div class="hero_area">
       <!-- header section strats -->
-
-      {{ content_for_header }}
-      {{ section 'header' }}
+      {% section 'header' %}
       <!-- end header section -->
 
       {{ content_for_layout }}
@@ -731,7 +731,7 @@
     </section>
     <!-- end client section -->
     <!-- footer start -->
-    {{ section 'footer' }}
+    {% section 'footer' %}
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- popper js -->
