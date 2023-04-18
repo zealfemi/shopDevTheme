@@ -34,8 +34,8 @@
             {% for child_link in link %}
               <ul class="dropdown-menu">
                 {% if link.links.size > 0 %}
-                  <li>
-                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ child_link.url }}">{{ child_link.title }}</a>
                   </li>
                 {% endif %}
               </ul>
