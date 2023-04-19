@@ -152,7 +152,7 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "footer_menu": "footer"
+              "footer_menu": "main-menu"
             }
           },
           "d2a292e3-5f03-48e7-ba9d-9a73d472dfdb": {
