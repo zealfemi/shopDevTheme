@@ -160,11 +160,18 @@
             "settings": {
               "footer_menu": "main-menu"
             }
+          },
+          "7f5a60bf-5301-4f2f-8692-74ae4d0e6141": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_heading": "NEWSLETTER"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "90489080-1346-418a-8502-fbd6d50b24fd"
+          "90489080-1346-418a-8502-fbd6d50b24fd",
+          "7f5a60bf-5301-4f2f-8692-74ae4d0e6141"
         ],
         "settings": {
         }
