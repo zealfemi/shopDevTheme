@@ -1,63 +1,63 @@
 <footer>
   <div class="container">
     <div class="row">
-
-
       {% for blocks in block.settings %}
-
         {% case block.type %}
           {% when 'TextArea' %}
-          <div class="col-md-4">
-            <div class="full">
-              <div class="logo_footer">
-                <a href="{{ shop.url }}"><img
-                    width="210"
-                    src="{{ block.settings.logo | img_url: 'medium' }}"
-                    alt="#"></a>
-              </div>
-              <div class="information_f">
-                {{ block.settings.footer_text }}
+            <div class="col-md-4">
+              <div class="full">
+                <div class="logo_footer">
+                  <a href="{{ shop.url }}"
+                    ><img
+                      width="210"
+                      src="{{ block.settings.logo | img_url: 'medium' }}"
+                      alt="#"
+                  ></a>
+                </div>
+                <div class="information_f">
+                  {{ block.settings.footer_text }}
+                </div>
               </div>
             </div>
-          </div>
 
           {% when 'link_list' %}
-          <div class="col-md-4">
-            <div class="widget_menu">
-              <h3>Menu</h3>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+            <div class="col-md-4">
+              <div class="widget_menu">
+                <h3>Menu</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Testimonial</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
 
           {% when 'newsletter' %}
-          <div class="col-md-4">
-            <div class="widget_menu">
-              <h3>{{ block.settings.newsletter_heading }}</h3>
-              <div class="information_f">
-                <p>Subscribe by our newsletter and get update protidin.</p>
-              </div>
-              <div class="form_sub">
-                <form>
-                  <fieldset>
-                    <div class="field">
-                      <input
-                        type="email"
-                        placeholder="Enter Your Mail"
-                        name="email">
-                      <input type="submit" value="Subscribe">
-                    </div>
-                  </fieldset>
-                </form>
+            <div class="col-md-4">
+              <div class="widget_menu">
+                <h3>{{ block.settings.newsletter_heading }}</h3>
+                <div class="information_f">
+                  <p>Subscribe by our newsletter and get update protidin.</p>
+                </div>
+                <div class="form_sub">
+                  <form>
+                    <fieldset>
+                      <div class="field">
+                        <input
+                          type="email"
+                          placeholder="Enter Your Mail"
+                          name="email"
+                        >
+                        <input type="submit" value="Subscribe">
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
         {% endcase %}
       {% endfor %}
     </div>
@@ -73,68 +73,75 @@
     <a href="https://github.com/zealfemi/" target="_blank">Mackie</a>
   </p>
 </div>
+{{ 'jquery-3.4.1.min.js' | asset_url | script_tag }}
+<!-- popper js -->
+{{ 'popper.min.js' | asset_url | script_tag }}
+<!-- bootstrap js -->
+{{ 'bootstrap.js' | asset_url | script_tag }}
+<!-- custom js -->
+{{ 'custom.js' | asset_url | script_tag }}
 
 {% schema %}
-  {
-    "name": "Footer Section",
-    "blocks": [
-      {
-        "type": "text",
-        "name": "TextArea",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "logo",
-            "label": "Upload footer logo"
-          }, {
-            "type": "richtext",
-            "id": "footer_text",
-            "label": "Add your text"
-          }
-        ]
-      }, {
-        "type": "link_list",
-        "name": "Menu",
-        "settings": [
-          {
-            "type": "link_list",
-            "id": "footer_menu",
-            "label": "Add your menu"
-          }
-        ]
-      }, {
-        "type": "newsletter",
-        "name": "newsletter",
-        "settings": [
-          {
-            "type": "text",
-            "id": "newsletter_heading",
-            "label": "Add newsletter"
-          }
-        ]
-      }
-
-
-
-    ],
-    "settings": [
-      {
-        "type": "header",
-        "content": "Footer Section"
-      }
-    ],
-    "default": {
-      "blocks": [
+{
+  "name": "Footer Section",
+  "blocks": [
+    {
+      "type": "text",
+      "name": "TextArea",
+      "settings": [
         {
-          "type": "link_list"
-        }, 
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Upload footer logo"
+        }, {
+          "type": "richtext",
+          "id": "footer_text",
+          "label": "Add your text"
+        }
+      ]
+    }, {
+      "type": "link_list",
+      "name": "Menu",
+      "settings": [
         {
-          "type": "text"
-        }, 
+          "type": "link_list",
+          "id": "footer_menu",
+          "label": "Add your menu"
+        }
+      ]
+    }, {
+      "type": "newsletter",
+      "name": "newsletter",
+      "settings": [
         {
-          "type": "newsletter"
+          "type": "text",
+          "id": "newsletter_heading",
+          "label": "Add newsletter"
         }
       ]
     }
+
+
+
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Footer Section"
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "text"
+      },
+      {
+        "type": "newsletter"
+      }
+    ]
   }
+}
 {% endschema %}
