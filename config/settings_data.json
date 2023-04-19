@@ -155,12 +155,6 @@
               "footer_menu": "footer"
             }
           },
-          "90489080-1346-418a-8502-fbd6d50b24fd": {
-            "type": "link_list",
-            "settings": {
-              "footer_menu": "main-menu"
-            }
-          },
           "d2a292e3-5f03-48e7-ba9d-9a73d472dfdb": {
             "type": "text",
             "settings": {
@@ -177,7 +171,6 @@
         },
         "block_order": [
           "footer-0",
-          "90489080-1346-418a-8502-fbd6d50b24fd",
           "d2a292e3-5f03-48e7-ba9d-9a73d472dfdb",
           "7f5a60bf-5301-4f2f-8692-74ae4d0e6141"
         ],
