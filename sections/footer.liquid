@@ -5,7 +5,14 @@
         {% case block.type %}
           {% when 'TextArea' %}
             <div class="col-md-4">
-              <div class="full">
+              <div class="widget_menu">
+                <div class="logo_footer">
+                  <a href="{{ shop.url }}"><img
+                      width="210"
+                      src="{{ block.settings.logo | img_url: 'medium' }}"
+                      alt="#"
+                  ></a>
+                </div>
                 <div class="information_f">
                   {{ block.settings.footer_text }}
                 </div>
