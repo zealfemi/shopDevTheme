@@ -2,6 +2,7 @@
   "sections": {
     "796b72b5-eb37-4b87-9e47-b9cdb5236762": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--18617400164647__796b72b5-eb37-4b87-9e47-b9cdb5236762-1681922203bde3807b-0": {
           "type": "column",
