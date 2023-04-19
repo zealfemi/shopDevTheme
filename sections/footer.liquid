@@ -25,7 +25,7 @@
               <div class="widget_menu">
                 <h3>Menu</h3>
                 <ul>
-                  {% for link in block.settings.footer_menu %}
+                  {% for link in block.settings.footer_menu.links %}
                     <li>
                       <a href="{{ link.url }}">{{ link.title }}</a>
                     </li>
