@@ -176,6 +176,22 @@
         ],
         "settings": {
         }
+      },
+      "information": {
+        "type": "information",
+        "blocks": {
+          "732003f4-4e5b-45d1-bc11-684259b7076e": {
+            "type": "text",
+            "settings": {
+              "info_heading": "Heading here"
+            }
+          }
+        },
+        "block_order": [
+          "732003f4-4e5b-45d1-bc11-684259b7076e"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
