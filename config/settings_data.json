@@ -185,10 +185,31 @@
             "settings": {
               "info_heading": "Heading here"
             }
+          },
+          "9e35978f-5d19-441a-a0c7-e703a43e1d4e": {
+            "type": "delivery_text",
+            "settings": {
+              "delivery": "<h5>Fast Delivery<\/h5><p>variations of passages of Lorem Ipsum available<\/p>"
+            }
+          },
+          "8cc95794-354b-4a54-a6a5-9942eadce0be": {
+            "type": "shipping_text",
+            "settings": {
+              "shipping": "<h5>Free Shipping<\/h5><p>variations of passages of Lorem Ipsum available<\/p>"
+            }
+          },
+          "cd3c0108-49f6-4aac-8050-3d533310feab": {
+            "type": "quality_text",
+            "settings": {
+              "quality": "<h5>Best Quality<\/h5><p>variations of passages of Lorem Ipsum available<\/p>"
+            }
           }
         },
         "block_order": [
-          "732003f4-4e5b-45d1-bc11-684259b7076e"
+          "732003f4-4e5b-45d1-bc11-684259b7076e",
+          "9e35978f-5d19-441a-a0c7-e703a43e1d4e",
+          "8cc95794-354b-4a54-a6a5-9942eadce0be",
+          "cd3c0108-49f6-4aac-8050-3d533310feab"
         ],
         "settings": {
         }
