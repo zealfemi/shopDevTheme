@@ -1,10 +1,10 @@
 <section class="slider_section ">
+  {% for block in section.blocks %}
   <div class="slider_bg_box">
     <img src="{{ section.settings.slide_image | img_url: 'master' }}" alt="">
   </div>
   <div id="customCarousel1" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      {% for block in section.blocks %}
         <div class="carousel-item active">
           <div class="container ">
             <div class="row">
