@@ -33,9 +33,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "37327e85-f118-4ada-bfd0-ad08446c9d94": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18617400164647__37327e85-f118-4ada-bfd0-ad08446c9d94-1681997140f5d7a770-0": {
+          "type": "image",
+          "settings": {
+            "heading": "NEW ARRIVALS",
+            "paragraph": "Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.",
+            "btn_text": "SHOP NOW",
+            "btn_url": "shopify:\/\/products\/nice-shoes"
+          }
+        }
+      },
+      "block_order": [
+        "template--18617400164647__37327e85-f118-4ada-bfd0-ad08446c9d94-1681997140f5d7a770-0"
+      ],
+      "settings": {
+        "slide_image": "shopify:\/\/shop_images\/slider-bg.jpg"
+      }
     }
   },
   "order": [
-    "796b72b5-eb37-4b87-9e47-b9cdb5236762"
+    "796b72b5-eb37-4b87-9e47-b9cdb5236762",
+    "37327e85-f118-4ada-bfd0-ad08446c9d94"
   ]
 }
