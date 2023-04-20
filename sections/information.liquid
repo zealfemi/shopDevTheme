@@ -108,8 +108,7 @@
                   </svg>
                 </div>
                 <div class="detail-box">
-                  <h5>Fast Delivery</h5>
-                  <p>variations of passages of Lorem Ipsum available</p>
+                  {{ block.settings.delivery }}
                 </div>
               </div>
             </div>
@@ -230,8 +229,7 @@
                   </svg>
                 </div>
                 <div class="detail-box">
-                  <h5>Free Shiping</h5>
-                  <p>variations of passages of Lorem Ipsum available</p>
+                  {{ block.settings.shipping }}
                 </div>
               </div>
             </div>
@@ -255,8 +253,7 @@
                   </svg>
                 </div>
                 <div class="detail-box">
-                  <h5>Best Quality</h5>
-                  <p>variations of passages of Lorem Ipsum available</p>
+                  {{ block.settings.quality }}
                 </div>
               </div>
             </div>
@@ -288,7 +285,7 @@
       "settings": [
         {
           "type": "richtext",
-          "id": "delivery_text",
+          "id": "delivery",
           "label": "Enter delivery details"
         }
       ]
@@ -299,7 +296,7 @@
       "settings": [
         {
           "type": "richtext",
-          "id": "shipping_text",
+          "id": "shipping",
           "label": "Enter shipping details"
         }
       ]
