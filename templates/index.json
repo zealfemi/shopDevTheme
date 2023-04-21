@@ -53,10 +53,20 @@
       "settings": {
         "heading": "Why Shop With Us"
       }
+    },
+    "ea556954-6b1d-4128-9cc1-6367ce514e44": {
+      "type": "new-arrival",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/arrival-bg.png",
+        "information": "Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!",
+        "btn_text": "Shop Now",
+        "btn_link": "shopify:\/\/products\/insane-shoes"
+      }
     }
   },
   "order": [
     "37327e85-f118-4ada-bfd0-ad08446c9d94",
-    "5634845b-6902-48de-a57d-e423c0174f94"
+    "5634845b-6902-48de-a57d-e423c0174f94",
+    "ea556954-6b1d-4128-9cc1-6367ce514e44"
   ]
 }
