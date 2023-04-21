@@ -19,9 +19,44 @@
       "settings": {
         "slide_image": "shopify:\/\/shop_images\/slider-bg.jpg"
       }
+    },
+    "5634845b-6902-48de-a57d-e423c0174f94": {
+      "type": "information",
+      "blocks": {
+        "template--18657623834919__5634845b-6902-48de-a57d-e423c0174f94-1682076113480e7d95-0": {
+          "type": "text",
+          "settings": {
+            "title": "Fast Delivery",
+            "body": "variations of passages of Lorem Ipsum available"
+          }
+        },
+        "5434b23b-bb07-4cb0-ab40-6fe59f032321": {
+          "type": "text",
+          "settings": {
+            "title": "Free Shiping",
+            "body": "variations of passages of Lorem Ipsum available"
+          }
+        },
+        "a19aa0a5-1854-40ea-b3f7-782d5b790964": {
+          "type": "text",
+          "settings": {
+            "title": "Best Quality",
+            "body": "variations of passages of Lorem Ipsum available"
+          }
+        }
+      },
+      "block_order": [
+        "template--18657623834919__5634845b-6902-48de-a57d-e423c0174f94-1682076113480e7d95-0",
+        "5434b23b-bb07-4cb0-ab40-6fe59f032321",
+        "a19aa0a5-1854-40ea-b3f7-782d5b790964"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
-    "37327e85-f118-4ada-bfd0-ad08446c9d94"
+    "37327e85-f118-4ada-bfd0-ad08446c9d94",
+    "5634845b-6902-48de-a57d-e423c0174f94"
   ]
 }
