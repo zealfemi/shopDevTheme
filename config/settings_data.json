@@ -17,22 +17,30 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "footer_menu": ""
-            }
-          },
           "footer-1": {
             "type": "text",
             "settings": {
-              "footer_text": ""
+              "logo": "shopify:\/\/shop_images\/logo.png",
+              "footer_text": "<p><strong>ADDRESS:<\/strong> 28 White tower, Street Name New York City, USA<\/p><p><strong>TELEPHONE:<\/strong> +91 987 654 3210<\/p><p><strong>EMAIL:<\/strong> yourmain@gmail.com<\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "footer_menu": "main-menu"
+            }
+          },
+          "6074607f-1879-406c-a264-ded3fb811086": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_heading": "Newsletter"
             }
           }
         },
         "block_order": [
+          "footer-1",
           "footer-0",
-          "footer-1"
+          "6074607f-1879-406c-a264-ded3fb811086"
         ],
         "settings": {
         }
