@@ -4,15 +4,19 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'text' %}
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="full">
                 <div class="logo_footer">
-                  <a href="{{ shop.url }}"
-                    ><img
-                      width="210"
-                      src="{{ block.settings.logo | img_url: 'medium' }}"
-                      alt="#"
-                  ></a>
+                  {% if block.settings.logo != blank %}
+                    <a href="{{ shop.url }}"
+                      ><img
+                        width="210"
+                        src="{{ block.settings.logo | img_url: 'medium' }}"
+                        alt="#"
+                    ></a>
+                  {% else %}
+                    <a href="{{ shop.url }}">{{ shop.title }}</a>
+                  {% endif %}
                 </div>
                 <div class="information_f">
                   {{ block.settings.footer_text }}
@@ -21,7 +25,7 @@
             </div>
 
           {% when 'link_list' %}
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="widget_menu">
                 <h3>Menu</h3>
                 <ul>
