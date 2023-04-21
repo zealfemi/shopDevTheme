@@ -30,6 +30,12 @@
               "footer_menu": "main-menu"
             }
           },
+          "38e34ec8-f600-45ba-9d2e-b5a7023263e6": {
+            "type": "link_list",
+            "settings": {
+              "footer_menu": "footer"
+            }
+          },
           "6074607f-1879-406c-a264-ded3fb811086": {
             "type": "newsletter",
             "settings": {
@@ -40,6 +46,7 @@
         "block_order": [
           "footer-1",
           "footer-0",
+          "38e34ec8-f600-45ba-9d2e-b5a7023263e6",
           "6074607f-1879-406c-a264-ded3fb811086"
         ],
         "settings": {
