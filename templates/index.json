@@ -11,20 +11,10 @@
             "btn_text": "SHOP NOW",
             "btn_url": "shopify:\/\/products\/nice-shoes"
           }
-        },
-        "434460be-577b-4331-9be9-b75e793ec06c": {
-          "type": "image",
-          "settings": {
-            "heading": "BIG DISCOUNT",
-            "paragraph": "Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.",
-            "btn_text": "SHOP NOW",
-            "btn_url": "shopify:\/\/products\/awesome-sneakers"
-          }
         }
       },
       "block_order": [
-        "template--18617400164647__37327e85-f118-4ada-bfd0-ad08446c9d94-1681997140f5d7a770-0",
-        "434460be-577b-4331-9be9-b75e793ec06c"
+        "template--18617400164647__37327e85-f118-4ada-bfd0-ad08446c9d94-1681997140f5d7a770-0"
       ],
       "settings": {
         "slide_image": "shopify:\/\/shop_images\/slider-bg.jpg"
