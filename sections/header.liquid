@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       {% if section.settings.logo != blank %}
         <a class="navbar-brand" href="{{ shop.url }}"
-          ><img width="250" src="{{ section.settings.logo | img_url: 'medium' }}" alt="#"
+          ><img width="250" src="{{ section.settings.logo | img_url: 'medium'}}" alt="#"
         ></a>
       {% else %}
         <a class="navbar-brand" href="{{ shop.url }}">{{ shop.name }}</a>
@@ -26,20 +26,19 @@
           {% for link in section.settings.menu.links %}
             <li class="nav-item">
               <a class="nav-link" href="{{ link.url }}">
-                {{- link.title }}
+                {{ link.title }}
                 <span class="sr-only">(current)</span></a
               >
+              {% if link.links.size > 0 %}
+                <ul class="dropdown-menu">
+                  {% for child_link in link.links %}
+                    <li>
+                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             </li>
-
-            {% for child_link in link %}
-              <ul class="dropdown-menu">
-                {% if link.links.size > 0 %}
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ child_link.url }}">{{ child_link.title }}</a>
-                  </li>
-                {% endif %}
-              </ul>
-            {% endfor %}
           {% endfor %}
 
           <li class="nav-item">
@@ -108,6 +107,7 @@
               </svg>
             </a>
           </li>
+
           <form class="form-inline">
             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
               <i class="fa fa-search" aria-hidden="true"></i>
@@ -122,6 +122,7 @@
 {% schema %}
 {
   "name": "Header Section",
+  "class": "section-header",
   "settings": [
     {
       "type": "header",
@@ -130,14 +131,13 @@
     {
       "type": "image_picker",
       "id": "logo",
-      "label": "Choose your logo"
+      "label": "Upload your logo"
     },
     {
       "type": "link_list",
       "id": "menu",
-      "default": "main-menu",
       "label": "Select your main menu"
     }
-  ]
+]
 }
 {% endschema %}
