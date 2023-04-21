@@ -33,7 +33,17 @@
 {% schema %}
 {
   "name": "Featured Product - Custom",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Featured Products"
+    },
+    {
+      "type": "collection",
+      "id": "fp",
+      "label": "Select your collection"
+    }
+  ],
   "presets": [
     {
       "name": "Featured Product - Custom"
