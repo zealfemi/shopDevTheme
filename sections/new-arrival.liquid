@@ -1,12 +1,61 @@
+<!-- arrival section -->
+<section class="arrival_section">
+  <div class="container">
+    <div class="box">
+      <div class="arrival_bg_box">
+        <img src="{{ section.settings.image | img_url: 'grande' }}" alt="">
+      </div>
+      <div class="row">
+        <div class="col-md-6 ml-auto">
+          <div class="heading_container remove_line_bt">
+            <h2>#NewArrivals</h2>
+          </div>
+          <p style="margin-top: 20px;margin-bottom: 30px;">
+            {{ section.settings.information }}
+          </p>
+          <div class="btn-box">
+            <a href="{{ section.settings.btn_link }}" class="btn1"> {{ section.settings.btn_text }} </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end arrival section -->
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "New Arrival",
+  "settings": [
+    {
+      "type": "header",
+      "content": "New Arrivals"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Select your picture"
+    },
+    {
+      "type": "textarea",
+      "id": "information",
+      "label": "Note about the arrivals"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Text on button"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Select the link to product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Arrivals"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
