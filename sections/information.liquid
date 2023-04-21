@@ -8,7 +8,7 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <img src="{{ block.settings.image }}" alt="#">
+              <img src="{{ block.settings.image | img_url: 'small' }}" alt="#">
             </div>
             <div class="detail-box">
               <h5>{{ block.settings.title }}</h5>
