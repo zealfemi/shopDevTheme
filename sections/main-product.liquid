@@ -5,9 +5,11 @@
   <div class="row">
     <div class="col-md-6">
       <img src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}">
-      {% for image in current_product.images %}
-        <img src="{{ image.src | img_url:'small' }}">
-      {% endfor %}
+      <div class="thumbnail">
+        {% for image in current_product.images %}
+          <img src="{{ image.src | img_url:'small' }}">
+        {% endfor %}
+      </div>
     </div>
 
     <div class="col-md-6"></div>
