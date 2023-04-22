@@ -2,5 +2,14 @@
 {% assign product_image = current_product.featured_image %}
 
 <div class="container">
-  <div class="row"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{ product_image.src | img_url: 'large' }}" alt="{{ product_image.alt }}">
+      {% for image in current_product.images %}
+        <img src="{{ image.url | img_url:'small' }}">
+      {% endfor %}
+    </div>
+
+    <div class="col-md-6"></div>
+  </div>
 </div>
