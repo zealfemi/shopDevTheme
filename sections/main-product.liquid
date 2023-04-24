@@ -1,8 +1,11 @@
+{% assign current_product = product.selected_or_first_available_variant %}
+{% assign product_image = current_product.featured_image | default: product.featured_image %}
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <div class="product-image">
-        <img src="">
+        <img src="{{ product_image.image }}" alt="{{ product_image.alt }}">
 
         <div class="thumbnail">
           <img src="">
