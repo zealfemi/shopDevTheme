@@ -27,7 +27,7 @@
             {% if variant.available %}
               <option name="{{ variant.id }}">{{ variant.title }}</option>
             {% else %}
-              <option name="{{ variant.id }}">{{ variant.title }}</option>
+              <option name="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
             {% endif %}
           {% endfor %}
         </select>
