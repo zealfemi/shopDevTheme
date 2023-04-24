@@ -4,7 +4,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-12">
-      <img src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}">
+      <div class="product-image">
+        <img src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}">
+      </div>
+      <div class="thumbnail">
+        {% for image in product.images %}
+          <img src="{{ image.src }}" alt="{{ image.alt }}">
+        {% endfor %}
+      </div>
     </div>
 
     <div class="col-md-6 col-12"></div>
