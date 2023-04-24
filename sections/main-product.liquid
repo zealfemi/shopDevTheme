@@ -20,7 +20,7 @@
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
 
-      {% form 'product', product, class="product-form", id="ProductForm" %}
+      {% form 'product', product, class: 'product-form', id: 'ProductForm' %}
         <input type="number" name="quantity" id="Quantity" value="1" min="1">
         <select name="id">
           {% for variant in product.variants %}
