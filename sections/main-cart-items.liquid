@@ -22,7 +22,7 @@
                       </td>
                       <td>
                         <a href="{{ item.url }}">{{ item.product.title }}</a>
-                        <p>{{ item.variant.title }}</p>
+                        <p class="small">{{ item.variant.title }}</p>
                         <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">remove</a>
                       </td>
                       <td>{{ item.price | money }}</td>
