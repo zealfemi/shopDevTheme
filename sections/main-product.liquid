@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="product-image">
-        <img src="{{ product_image.src | img_url: 'large' }}" alt="{{ product_image.alt }}">
+        <img class="ProductImg" src="{{ product_image.src | img_url: 'large' }}" alt="{{ product_image.alt }}">
 
         <div class="thumbnail">
           {% for image in product.images %}
@@ -19,6 +19,8 @@
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
+
+      {% form 'product', product, class="product-form" %}{% endform %}
     </div>
   </div>
 </div>
