@@ -20,7 +20,9 @@
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
 
-      {% form 'product', product, class="product-form" %}{% endform %}
+      {% form 'product', product, class="product-form" %}
+        {% form 'checkout' %}{% endform %}
+      {% endform %}
     </div>
   </div>
 </div>
