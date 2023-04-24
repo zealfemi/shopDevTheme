@@ -21,10 +21,10 @@
       {% form 'product', product, class: 'product-form', id: 'AddToCart' %}
         <input type="number" name="id" value="1" min="1">
 
-        <select name="id">
+        <select name="id" id="productSelect">
           {% for variant in product.variants %}
             {% if variant.available %}
-              <option name="{{ variant.id }}">{{ variant.title }}</option>
+              <option value="{{ variant.id }}">{{ variant.title }}</option>
             {% else %}
               <option name="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
             {% endif %}
