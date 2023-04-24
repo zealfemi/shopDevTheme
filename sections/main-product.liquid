@@ -20,7 +20,18 @@
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
 
-      {% form 'product', product, class="product-form" %}{% endform %}
+      {% form 'product', product, class="product-form" %}
+        <input name="id">
+        <select name="id">
+          {% for variant in product.variants %}
+            {% if variant.available %}
+              <option name="{{ variant.id }}">{{ variant.title }}</option>
+            {% else %}
+              <option name="{{ variant.id }}">{{ variant.title }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      {% endform %}
       {% form 'checkout' %}{% endform %}
     </div>
   </div>
