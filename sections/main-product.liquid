@@ -18,7 +18,7 @@
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
-      {% form 'product', product, class: 'product-form', id: 'ProductForm' %}
+      {% form 'product', product, class: 'product-form', id: 'AddToCart' %}
         <input type="number" name="id" value="1" min="1">
 
         <select name="id">
