@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 col-12">
+    <div class="col-12 col-md-6 card shadow">
       <div class="product-image">
         <img src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}">
       </div>
@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-12">
+    <div class="col-12 col-md-6 card shadow">
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money_with_currency }}</p>
       <p>{{ product.description }}</p>
