@@ -9,7 +9,7 @@
       </div>
       <div class="thumbnail">
         {% for image in product.images %}
-          <img src="{{ image.src }}" alt="{{ image.alt }}">
+          <img src="{{ image.src | img_url: 'small'}}" alt="{{ image.alt }}">
         {% endfor %}
       </div>
     </div>
