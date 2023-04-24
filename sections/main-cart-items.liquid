@@ -50,7 +50,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-12"></div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <p>sub total : {{ cart.total_price | money }}</p>
+            <button type="submit" name="update">Update</button>
+            <button type="submit" name="checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
     </form>
   </div>
 </div>
