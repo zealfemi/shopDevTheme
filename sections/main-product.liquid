@@ -31,6 +31,7 @@
           {% endfor %}
         </select>
         <button type="submit" name="add" class="btn btn-large" id="AddToCart">Add to Cart</button>
+        {% form | payment_button %}{% endform %}
       {% endform %}
     </div>
   </div>
