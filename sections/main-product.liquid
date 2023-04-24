@@ -21,7 +21,7 @@
       <p>{{ product.description }}</p>
 
       {% form 'product', product, class="product-form" %}
-        <input name="id">
+        <input name="id" value="1" min="1">
         <select name="id">
           {% for variant in product.variants %}
             {% if variant.available %}
