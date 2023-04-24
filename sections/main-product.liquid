@@ -4,35 +4,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-12">
-      <div class="product-image">
-        <img class="ProductImg" src="{{ product_image.src | img_url: 'large' }}" alt="{{ product_image.alt }}">
-
-        <div class="thumbnail">
-          {% for image in product.images %}
-            <img src="{{ image.src | img_url: 'small' }}" alt="{{ image.alt }}">
-          {% endfor %}
-        </div>
-      </div>
+      <img src="{{  }}" alt="{{ product_image.alt }}">
     </div>
 
-    <div class="col-md-6 col-12">
-      <h1>{{ product.title }}</h1>
-      <p>{{ current_product.price | money_with_currency }}</p>
-      <p>{{ product.description }}</p>
-
-      {% form 'product', product, class: 'product-form', id: 'ProductForm' %}
-        <input type="number" name="quantity" id="Quantity" value="1" min="1">
-        <select name="id">
-          {% for variant in product.variants %}
-            {% if variant.available %}
-              <option name="{{ variant.id }}">{{ variant.title }}</option>
-            {% else %}
-              <option name="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
-            {% endif %}
-          {% endfor %}
-        </select>
-      {% endform %}
-      {% form 'checkout' %}{% endform %}
-    </div>
+    <div class="col-md-6 col-12"></div>
   </div>
 </div>
