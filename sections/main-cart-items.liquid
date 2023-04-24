@@ -1,3 +1,4 @@
+{% if cart.item_count > 0 %}
 <div class="container">
   <div class="my-5">
     <form action="/cart" class="row" method="post" novalidate>
@@ -61,6 +62,11 @@
         </div>
       </div>
     </form>
+
+    {% else %}
+  <h2>cart</h2>
+  Cart is empty
+{% endif %}
   </div>
 </div>
 
