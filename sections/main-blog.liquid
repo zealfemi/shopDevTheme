@@ -6,9 +6,9 @@
 </div>
 <div class="container my-5 p-2">
   {% paginate blog.articles by 6 %}
-    <div class="row my-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       {% for article in blog.articles %}
-        <div class="col my-2">
+        <div class="col">
           <div class="card shadow">
             <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
 
