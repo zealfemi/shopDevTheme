@@ -16,7 +16,7 @@
               <h2>{{ article.title }}</h2>
               {{ article.author }} @
               <div class="small">{{ article.created_at | date }}</div>
-              <p class="card-text">{{ article.content | strip_html | truncatewords: 30 }}</p>
+              <p class="card-text">{{ article.content | strip_html | truncatewords: 5 }}</p>
               <a class="btn btn-secondary" href="{{ article.url }}">Read more...</a>
             </div>
           </div>
