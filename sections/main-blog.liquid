@@ -15,7 +15,7 @@
             {% else %}
               <img
                 class="card-img-top"
-                src="{{ 'image' | placeholder_svg_tag: 'card-img-top' | img_url: 'medium' }}"
+                src="{{ placeholder_svg_tag | img_url: 'medium' }}"
                 alt="{{ article.title }}"
               >
             {% endif %}
