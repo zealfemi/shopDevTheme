@@ -4,7 +4,7 @@
     <p class="lead">Read Our Latest Articles</p>
     <div class="row my-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
       {% for article in blog.articles %}
-        <div class="col">
+        <div class="col my-2">
           <div class="card shadow">
             {% if article.image.src != null %}
               <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
