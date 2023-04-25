@@ -2,8 +2,8 @@
   <div class="container">
     <h1 class="display-4">{{ blog.title }}</h1>
     <p class="lead">Read Our Latest Articles</p>
-    {% for article in blog.articles %}
-      <div class="row my-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="row my-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
+      {% for article in blog.articles %}
         <div class="col my-2">
           <div class="card shadow">
             {% if article.image.src != null %}
@@ -20,8 +20,8 @@
             </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
