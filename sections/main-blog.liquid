@@ -4,7 +4,7 @@
     <p class="lead">Read Our Latest Articles</p>
     <div class="row my-3">
       {% for article in blog.articles %}
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-4 my-3 mx-auto">
           <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
           <h3>{{ article.title }}</h3>
           <p>{{ article.content | truncate: 30 }}</p>
