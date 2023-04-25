@@ -6,7 +6,7 @@
       {% for article in blog.articles %}
         <div class="col-md-4">
           <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
-          <p>{{ article.title }}</p>
+          <h3>{{ article.title }}</h3>
           <p>{{ article.content | truncate: 30 }}</p>
           <a href="{{ article.url }}">Read more...</a>
         </div>
