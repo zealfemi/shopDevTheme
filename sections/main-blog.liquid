@@ -9,6 +9,7 @@
             <div class="card-body">
               <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
               <h2>{{ article.title }}</h2>
+              {{ article.author }} - {{ article.created_at }}
               <p>{{ article.content | truncate: 30 }}</p>
               <a class="btn btn-secondary" href="{{ article.url }}">Read more...</a>
             </div>
