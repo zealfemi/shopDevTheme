@@ -1,11 +1,11 @@
 <div class="blog-template">
-  <div class="container m4">
+  <div class="container">
     <h1>BLOG POSTS</h1>
 
     <div class="row">
       {% for article in blog.articles %}
         <div class="col-md-4">
-          <img src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
+          <img class="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
           <p>{{ article.title }}</p>
           <p>{{ article.content | truncate: 30 }}</p>
           <a href="{{ article.url }}">Read more...</a>
