@@ -4,8 +4,8 @@
     <p class="lead">Read Our Latest Articles</p>
   </div>
 </div>
-{% paginate blog.articles by 6 %}
-  <div class="container">
+<div class="container my-5 p-2">
+  {% paginate blog.articles by 6 %}
     <div class="row my-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
       {% for article in blog.articles %}
         <div class="col my-2">
@@ -23,11 +23,11 @@
         </div>
       {% endfor %}
     </div>
-  </div>
-  {% if paginate.pages > 1 %}
-    {{ paginate | default_pagination }}
-  {% endif %}
-{% endpaginate %}
+    {% if paginate.pages > 1 %}
+      {{ paginate | default_pagination }}
+    {% endif %}
+  {% endpaginate %}
+</div>
 
 {% schema %}
 {
