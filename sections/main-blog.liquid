@@ -6,7 +6,7 @@
       {% for article in blog.articles %}
         <div class="col">
           <div class="card shadow">
-            {% if article.image %}
+            {% if article.image.src != null %}
               <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
             {% endif %}
             <div class="card-body">
