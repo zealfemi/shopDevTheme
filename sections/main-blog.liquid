@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="display-4">{{ blog.title }}</h1>
     <p class="lead">Read Our Latest Articles</p>
-    <div class="row">
+    <div class="row p-4">
       {% for article in blog.articles %}
         <div class="col-md-4 mx-auto">
           <img style="max-width:100%" src="{{ article.image | img_url: 'large' }}" alt="{{ article.title }}">
