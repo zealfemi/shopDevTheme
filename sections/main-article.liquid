@@ -21,7 +21,7 @@
     <div class="col-12 col-md-4">
       {% if blog.comments_enabled? %}
         <h2>{{ number_of_comments }} comments</h2>
-        {% paginate article.comments by 1 %}
+        {% paginate article.comments by 5 %}
           {% for comment in article.comments %}
             <div>
               <div>{{ comment.content }}</div>
