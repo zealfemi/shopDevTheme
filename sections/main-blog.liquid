@@ -34,7 +34,9 @@
               <a href="{{ paginate.previous.url }}" class="page-link">{{ paginate.previous.title }}</a>
             </li>
           {% endif %}
-          <li class="page-item"><a href="" class="page-link">1</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link">{{ paginate.current_page.title }}</a>
+          </li>
           {% if paginate.next.is_link %}
             <li class="page-item">
               <a href="{{ paginate.next.url }}" class="page-link">{{ paginate.next.title }}</a>
