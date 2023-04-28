@@ -38,11 +38,11 @@
           {% for part in paginate.parts %}
             {% if part.is_link %}
               <li class="page-item">
-                <a href="{{ page.url }}" class="page-link">{{ page.title }}</a>
+                <a href="{{ part.url }}" class="page-link">{{ part.title }}</a>
               </li>
             {% else %}
               <li class="page-item disabled">
-                <a href="{{ page.url }}" class="page-link">{{ page.title }}</a>
+                <a href="{{ part.url }}" class="page-link">{{ part.title }}</a>
               </li>
             {% endif %}
           {% endfor %}
