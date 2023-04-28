@@ -32,6 +32,8 @@
           {% if paginate.previous.is_link %}
           {% endif %}
           <li class="page-item"><a href="#" class="page-link">1</a></li>
+          {% if paginate.next.is_link %}
+          {% endif %}
         </ul>
       </nav>
     {% endif %}
