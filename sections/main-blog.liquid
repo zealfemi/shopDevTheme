@@ -36,11 +36,17 @@
           {% endif %}
 
           {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <li class="page-item">
+                <a href="#" class="page-link">{{ paginate.current_page }}</a>
+              </li>
+            {% else %}
+              <li class="page-item disabled">
+                <a href="#" class="page-link">{{ paginate.current_page }}</a>
+              </li>
+            {% endif %}
           {% endfor %}
 
-          <li class="page-item">
-            <a href="#" class="page-link">{{ paginate.current_page }}</a>
-          </li>
           {% if paginate.next.is_link %}
             <li class="page-item">
               <a href="{{ paginate.next.url }}" class="page-link">{{ paginate.next.title }}</a>
