@@ -29,6 +29,8 @@
     {% if paginate.pages > 1 %}
       <nav aria-label="Page navigation my-5">
         <ul class="pagination justify-content-center">
+          {% if paginate.previous.is_link %}
+          {% endif %}
           <li class="page-item"><a href="#" class="page-link">1</a></li>
         </ul>
       </nav>
