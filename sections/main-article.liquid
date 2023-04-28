@@ -28,9 +28,7 @@
               {{ comment.author }} @ {{ comment.created_at }}
             </div>
           {% endfor %}
-          {% if paginate.pages > 1 %}
-            {% render 'pagination' %}
-          {% endif %}
+          {% render 'pagination' %}
         {% endpaginate %}
 
         <div>
