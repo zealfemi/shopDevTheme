@@ -34,6 +34,10 @@
               <a href="{{ paginate.previous.url }}" class="page-link">{{ paginate.previous.title }}</a>
             </li>
           {% endif %}
+
+          {% for part in paginate.parts %}
+          {% endfor %}
+
           <li class="page-item">
             <a href="#" class="page-link">{{ paginate.current_page }}</a>
           </li>
