@@ -28,6 +28,11 @@
     </div>
     {% if paginate.pages > 1 %}
       {{ paginate | default_pagination }}
+      <nav aria-label="Page navigation my-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a href="#" class="page-link">1</a></li>
+        </ul>
+      </nav>
     {% endif %}
   {% endpaginate %}
 </div>
