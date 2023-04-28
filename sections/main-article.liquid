@@ -29,7 +29,7 @@
             </div>
           {% endfor %}
           {% if paginate.pages > 1 %}
-            {{ paginate | default_pagination }}
+            {% render 'pagination' %}
           {% endif %}
         {% endpaginate %}
 
