@@ -23,9 +23,9 @@
         <h2>{{ number_of_comments }} comments</h2>
         {% paginate article.comments by 5 %}
           {% for comment in article.comments %}
-            <div>
-              <div>{{ comment.content }}</div>
-              {{ comment.author }} @ {{ comment.created_at }}
+            <div class="card shadow">
+              <div class="card-header">{{ comment.author }} @ {{ comment.created_at }}</div>
+              <div class="card-body">{{ comment.content }}</div>
             </div>
           {% endfor %}
           {% render 'pagination', paginate: paginate %}
