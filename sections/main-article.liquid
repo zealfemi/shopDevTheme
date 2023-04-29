@@ -24,7 +24,9 @@
         {% paginate article.comments by 5 %}
           {% for comment in article.comments %}
             <div class="card shadow">
-              <div class="card-header">{{ comment.author }} @ {{ comment.created_at }}</div>
+              <div class="card-header">
+                {{ comment.author }} @ {{ comment.created_at | date: format: 'abbreviated_date' }}
+              </div>
               <div class="card-body">{{ comment.content }}</div>
             </div>
           {% endfor %}
