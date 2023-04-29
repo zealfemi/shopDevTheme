@@ -4,15 +4,9 @@
       "type": "main-article",
       "settings": {
       }
-    },
-    "sidebar": {
-      "type": "sidebar",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "sidebar"
+    "main"
   ]
 }
