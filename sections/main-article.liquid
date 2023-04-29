@@ -60,8 +60,9 @@
               >
             </div>
 
-            <label for="CommentBody">message</label>
-            <textarea name="comment[body]" id="CommentBody" placeholder="message">{{ form.body }}</textarea>
+            <div class="form-floating">
+              <textarea name="comment[body]" id="CommentBody" placeholder="message">{{ form.body }}</textarea>
+            </div>
 
             <input type="submit" value="post">
           {% endform %}
