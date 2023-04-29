@@ -33,7 +33,7 @@
           {% render 'pagination', paginate: paginate %}
         {% endpaginate %}
 
-        <div>
+        <div class="my-5">
           {% form 'new_comment', article %}
             {{ form.errors | default_errors }}
             <div class="form-floating">
