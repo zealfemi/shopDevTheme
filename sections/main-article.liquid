@@ -33,21 +33,21 @@
           {% render 'pagination', paginate: paginate %}
         {% endpaginate %}
 
-        <div class="floating-form my-3">
+        <div>
           {% form 'new_comment', article %}
             {{ form.errors | default_errors }}
-
-            <input
-              class="form-control"
-              type="text"
-              name="comment[author]"
-              id="CommentAuthor"
-              placeholder="name"
-              value="{{ form.author }}"
-              autocapitalize="words"
-            >
-            <label for="CommentAuthor">name</label>
-
+            <div class="form-floating">
+              <input
+                class="form-control"
+                type="text"
+                name="comment[author]"
+                id="CommentAuthor"
+                placeholder="name"
+                value="{{ form.author }}"
+                autocapitalize="words"
+              >
+              <label for="CommentAuthor">name</label>
+            </div>
             <label for="CommentEmail">email</label>
             <input
               type="email"
