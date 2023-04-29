@@ -48,16 +48,19 @@
               >
               <label for="CommentAuthor">name</label>
             </div>
-            <label for="CommentEmail">email</label>
-            <input
-              type="email"
-              name="comment[email]"
-              id="CommentEmail"
-              placeholder="email"
-              value="{{ form.email }}"
-              autocorrect="off"
-              autocapitalize="off"
-            >
+            <div class="form-floating">
+              <input
+                class="form-control"
+                type="email"
+                name="comment[email]"
+                id="CommentEmail"
+                placeholder="email"
+                value="{{ form.email }}"
+                autocorrect="off"
+                autocapitalize="off"
+              >
+              <label for="CommentEmail">email</label>
+            </div>
 
             <label for="CommentBody">message</label>
             <textarea name="comment[body]" id="CommentBody" placeholder="message">{{ form.body }}</textarea>
