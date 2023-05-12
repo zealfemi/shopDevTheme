@@ -24,8 +24,6 @@
             {% for variant in product.variants %}
               {% if variant.available %}
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
-              {% else %}
-                <option name="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
               {% endif %}
             {% endfor %}
           </select>
