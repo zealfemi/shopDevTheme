@@ -28,24 +28,14 @@
                       </td>
                       <td>{{ item.price | money }}</td>
                       <td>
-                        <div class="quantity buttons_added">
-                          <input type="button" value="-" class="minus" onclick="this.form.submit()"
-                          ><input
-                            type="number"
-                            name="updates[]"
-                            id="updates_{{ item.key }}"
-                            value="{{ item.quantity }}"
-                            min="1"
-                            onblur="this.form.submit()"
-                            step="1"
-                            title="Qty"
-                            class="input-text qty text"
-                            size="4"
-                            pattern=""
-                            inputmode=""
-
-                          ><input type="button" value="+" class="plus" onclick="this.form.submit()">
-                        </div>
+                        <input
+                          type="number"
+                          name="updates[]"
+                          id="updates_{{ item.key }}"
+                          value="{{ item.quantity }}"
+                          min="0"
+                          onclick="this.form.submit()"
+                        >
                       </td>
                       <td>
                         {% if item.original_line_price != item.line_price -%}
